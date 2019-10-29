@@ -40,6 +40,7 @@ String capitalizeFirstLetter(String s) => s[0].toUpperCase() + s.substring(1);
 Color appColor_dark = Colors.blueAccent;//Color(0xFF67B9CE);
 Color appColor_medium = Colors.blueAccent[200];//Color(0xFF55CEC7);
 Color appColor_low = Colors.blueAccent[100];//Color(0xFF3BE8BB);
+Color transparent = Colors.transparent;//Color(0xFF3BE8BB);
 Color backgroung_light_white = Color(0xFFF3F4F8);
 Color color_time = Color(0xFF5DA4E2);
 

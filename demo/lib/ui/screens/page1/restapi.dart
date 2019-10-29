@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:demo/ui/screens/page1/DataObj.dart';
+import 'package:demo/ui/screens/page1/ViewItem.dart';
 import 'package:http/http.dart' as http;
 
 import 'package:flutter/material.dart';
@@ -63,17 +64,35 @@ class _RestApiState extends State<RestApi> {
                         fontFamily: 'Regular', fontSize: 18, color: Colors.black)),
               );
             }else {
-              return  ListView.builder(
+              return  ListView.separated(
                 itemCount: apiObj.data.length,
+                separatorBuilder: (context, index) {
+                  return Divider();
+                },
                 itemBuilder: (BuildContext context, int index) {
                   return ListTile(
-                    leading: CircleAvatar(
-                      backgroundImage: NetworkImage(apiObj.data[index].avatar),
+                    leading: ClipOval(
+                      child: CachedNetworkImage(
+                        imageUrl: apiObj.data[index].avatar,
+                        width: 50,
+                          height: 50,
+                        placeholder: (context, url) => new CircularProgressIndicator(),
+                        errorWidget: (context, url, error) => new Icon(Icons.error),
+                      ),
+                     // backgroundImage: NetworkImage(apiObj.data[index].avatar),
                     ),
                     title: Text('${apiObj.data[index].first_name}  ${apiObj.data[index].last_name}', style: TextStyle(
                         fontFamily: 'Regular', fontSize: 18, color: Colors.black)),
                     subtitle: Text(apiObj.data[index].email, style: TextStyle(
-                        fontFamily: 'Regular', fontSize: 18, color: Colors.grey)),
+                        fontFamily: 'Regular', fontSize: 12, color: Colors.grey)),
+                    onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ItemView(data: apiObj.data[index]),
+                      ),
+                    );
+                  },
                   );
                 },
               );
