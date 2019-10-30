@@ -15,7 +15,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
     // backing data
     final pages = [
       'fetching Rest Api',
-      'Device Information'
+      'Device Information',
+      'View Database'
     ];
 
     return MaterialApp(
@@ -49,6 +50,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       navigatetoRestApiScreen(pages[index],context);
                     }else if(index==1){
                       navigatetoDevcieInfoScreen(pages[index],context);
+                    }else if(index==2){
+                      navigatetoDatabaseScreen(pages[index],context);
                     }
                   },
                   title: Text(pages[index],

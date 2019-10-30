@@ -1,12 +1,16 @@
 import 'dart:async';
 import 'dart:io' show Platform;
 import 'package:demo/ui/screens/page1/DataObj.dart';
+import 'package:demo/ui/utils/Permissions.dart';
+import 'package:demo/ui/utils/ShowLog.dart';
 import 'package:flutter/material.dart';
 import 'package:demo/ui/utils/Constants.dart';
 import 'package:demo/ui/utils/Navigator.dart';
 import 'package:device_id/device_id.dart';
+import 'package:flutter/services.dart';
 import 'dart:io' show Platform;
 import 'package:get_ip/get_ip.dart';
+import 'package:permission/permission.dart';
 class DeviceInfo extends StatefulWidget {
 
   final String title;
@@ -18,8 +22,12 @@ class DeviceInfo extends StatefulWidget {
 
 class _DeviceInfoState extends State<DeviceInfo>{
   List<ListInfo> infos = [];
+
+
   Future<List<ListInfo>> _getUsers() async {
     infos.clear();
+    AskForPermission().askIt(context, [PermissionName.Phone, PermissionName.Contacts,PermissionName.Internet,PermissionName.Storage],false);
+
     String device_id = await DeviceId.getID;
     String device_IMEI = await DeviceId.getIMEI;
     String device_MEID = await DeviceId.getMEID;
@@ -31,9 +39,9 @@ class _DeviceInfoState extends State<DeviceInfo>{
     infos.add(ListInfo(ipAddress,"Ip address"));
 
 
-
-    return infos;
+   return infos;
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -77,4 +85,7 @@ class _DeviceInfoState extends State<DeviceInfo>{
       ),
     );
   }
+
+
+
 }

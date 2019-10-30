@@ -1,6 +1,8 @@
+import 'package:demo/ui/utils/Permissions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:demo/ui/intro/splashscreen.dart';
+import 'package:permission/permission.dart';
 
 void main() {
 
@@ -12,6 +14,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
