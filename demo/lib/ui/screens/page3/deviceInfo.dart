@@ -5,16 +5,16 @@ import 'package:demo/ui/utils/Constants.dart';
 import 'package:demo/ui/utils/Navigator.dart';
 
 
-class RestApi extends StatefulWidget {
+class DeviceInfo extends StatefulWidget {
 
   final String title;
   @override
-  _RestApiState createState() => new _RestApiState();
+  _DeviceInfoState createState() => new _DeviceInfoState();
 
-  RestApi({Key key,this.title}):super(key:key);
+  DeviceInfo({Key key,this.title}):super(key:key);
 }
 
-class _RestApiState extends State<RestApi>{
+class _DeviceInfoState extends State<DeviceInfo>{
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -24,6 +24,7 @@ class _RestApiState extends State<RestApi>{
         title: new Text(widget.title,style: TextStyle(
             fontFamily: 'Regular', fontSize: 18, color: Colors.white)),
       ),
+      body: Container(),
     );
   }
 }

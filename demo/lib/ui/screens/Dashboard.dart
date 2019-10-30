@@ -14,7 +14,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
   Widget build(BuildContext context) {
     // backing data
     final pages = [
-      'fetching Rest Api'
+      'fetching Rest Api',
+      'Device Information'
     ];
 
     return MaterialApp(
@@ -46,6 +47,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   onTap: (){
                     if(index==0){
                       navigatetoRestApiScreen(pages[index],context);
+                    }else if(index==1){
+                      navigatetoDevcieInfoScreen(pages[index],context);
                     }
                   },
                   title: Text(pages[index],

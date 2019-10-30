@@ -1,4 +1,5 @@
 
+import 'package:demo/ui/screens/page2/deviceInfo.dart';
 import 'package:flutter/material.dart';
 //import 'package:writodo/ui/screens/home/CreateTodo.dart';
 import 'package:demo/ui/screens/page1/restapi.dart';
@@ -39,6 +40,14 @@ Future navigatetoRestApiScreen(String mtitle,context) async {
     context,
     MaterialPageRoute(
         builder: (context) => RestApi(title: mtitle,)
+    ),
+  );
+}
+Future navigatetoDevcieInfoScreen(String mtitle,context) async {
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+        builder: (context) => DeviceInfo(title: mtitle,)
     ),
   );
 }

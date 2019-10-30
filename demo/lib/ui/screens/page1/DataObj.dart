@@ -23,3 +23,11 @@ class Data {
 
 
 }
+class ListInfo {
+  final String title;
+  final String subtile;
+
+  ListInfo(this.title, this.subtile);
+
+
+}
