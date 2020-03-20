@@ -1,0 +1,168 @@
+{
+  "data": [
+    {
+      "type": "type1",
+      "label": "Location score",
+      "xlabel": "Location",
+      "ylabel": "Score",
+      "values": [
+        {
+          "label": "Hyderabad",
+          "color": "#56D9FE",
+          "value": 5.3
+        },
+        {
+          "label": "Bangalore",
+          "color": "#56D9FE",
+          "value": 1.3
+        },
+        {
+          "label": "NYC",
+          "color": "#56D9FE",
+          "value": 2.3
+        },
+        {
+          "label": "Delhi",
+          "color": "#56D9FE",
+          "value": 3.3
+        }
+      ]
+    },
+    {
+      "type": "type1",
+      "label": "Gender score",
+      "xlabel": "Gender",
+      "ylabel": "Score",
+      "values": [
+        {
+          "label": "Male",
+          "color": "#56D9FE",
+          "value": 5.3
+        },
+        {
+          "label": "Female",
+          "color": "#E9BB00",
+          "value": 1.3
+        }
+      ]
+    },
+    {
+      "type": "type2",
+      "label": "Questions score",
+      "xlabel": "Questions",
+      "ylabel": "Score",
+      "values": [
+        {
+          "label": "Q1",
+          "color": "#67B988",
+          "value": 5.3
+        },
+        {
+          "label": "Q2",
+          "color": "#67B988",
+          "value": 1.3
+        }
+      ],
+      "categories": [
+        {
+          "label": "category1",
+          "values": [
+            {
+              "label": "Organization Vision"
+            },
+            {
+              "label": "Communication from Organization on changes/ procedures"
+            },
+            {
+              "label": "Capability of Leadership team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "type3",
+      "label": "Get a overall score for",
+      "values": [
+        {
+          "label": "Q1",
+          "color": "#67B988",
+          "value": 5.3
+        },
+        {
+          "label": "Q2",
+          "color": "#67B988",
+          "value": 1.3
+        }
+      ],
+      "categories": null,
+      "display": "4.2"
+    },
+    {
+      "type": "type4",
+      "label": "Categories score",
+      "xlabel": "Questions",
+      "ylabel": "Score",
+      "values": [
+        {
+          "label": "Category 1",
+          "color": "#67B988",
+          "value": 5.3
+        },
+        {
+          "label": "Category 2",
+          "color": "#67B988",
+          "value": 1.3
+        }
+      ],
+      "categories": [
+        {
+          "label": "category1",
+          "values": [
+            {
+              "label": "Organization Vision"
+            },
+            {
+              "label": "Communication from Organization on changes/ procedures"
+            },
+            {
+              "label": "Capability of Leadership team"
+            }
+          ]
+        },
+        {
+          "label": "category2",
+          "values": [
+            {
+              "label": "Organization Vision"
+            },
+            {
+              "label": "Communication from Organization on changes/ procedures"
+            },
+            {
+              "label": "Capability of Leadership team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "type5",
+      "label": "All Questions",
+      "xlabel": "Gender",
+      "ylabel": "Score",
+      "values": [
+        {
+          "label": "Self",
+          "color": "#56D9FE",
+          "value": 32
+        },
+        {
+          "label": "Peer",
+          "color": "#E9BB00",
+          "value": 13
+        }
+      ]
+    }
+  ]
+}
