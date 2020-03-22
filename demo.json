@@ -1,6 +1,4 @@
 {
-  "code":5,
-  "success":true,
   "data": [
     {
       "type": "type1",
@@ -63,21 +61,6 @@
           "label": "Q2",
           "color": "#67B988",
           "value": 1.3
-        },
-        {
-          "label": "Q3",
-          "color": "#67B988",
-          "value": 7.3
-        },
-        {
-          "label": "Q4",
-          "color": "#67B988",
-          "value": 2.3
-        },
-        {
-          "label": "Q5",
-          "color": "#67B988",
-          "value": 0.3
         }
       ],
       "categories": [
@@ -89,12 +72,6 @@
             },
             {
               "label": "Communication from Organization on changes/ procedures"
-            },
-            {
-              "label": "Capability of Leadership team"
-            },
-            {
-              "label": "Capability of Leadership team"
             },
             {
               "label": "Capability of Leadership team"
@@ -178,12 +155,50 @@
         {
           "label": "Self",
           "color": "#56D9FE",
-          "value": 14
+          "value": 32
         },
         {
           "label": "Peer",
           "color": "#E9BB00",
           "value": 13
+        }
+      ]
+    },
+    {
+      "type": "type6",
+      "label": "All Questions",
+      "xlabel": "Gender",
+      "ylabel": "Score",
+      "values": [
+        {
+          "label": "Your Self",
+          "values": [
+            {
+              "label": "Q1",
+              "color": "#56D9FE",
+              "value": 12
+            },
+            {
+              "label": "Q2",
+              "color": "#E9BB00",
+              "value": 13
+            }
+          ]
+        },
+        {
+          "label": "Company",
+          "values": [
+            {
+              "label": "Q1",
+              "color": "#56D9FE",
+              "value": 3
+            },
+            {
+              "label": "Q2",
+              "color": "#E9BB00",
+              "value": 6
+            }
+          ]
         }
       ]
     }
