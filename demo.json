@@ -201,6 +201,84 @@
           ]
         }
       ]
+    },
+    
+    {
+  "type": "type7",
+  "xlabel": "Gender",
+  "ylabel": "Score",
+  "values": [
+    {
+      "label": "Q1",
+      "values": [
+        {
+          "label": "Your self",
+          "values": [
+            {
+              "label": "Q1",
+              "color": "#56D9FE",
+              "value": 12
+            },
+            {
+              "label": "Q2",
+              "color": "#E9BB00",
+              "value": 13
+            }
+          ]
+        },
+        {
+          "label": "Company",
+          "values": [
+            {
+              "label": "Q1",
+              "color": "#56D9FE",
+              "value": 12
+            },
+            {
+              "label": "Q2",
+              "color": "#E9BB00",
+              "value": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Q2",
+      "values": [
+        {
+          "label": "Your self",
+          "values": [
+            {
+              "label": "Q1",
+              "color": "#56D9FE",
+              "value": 12
+            },
+            {
+              "label": "Q2",
+              "color": "#E9BB00",
+              "value": 13
+            }
+          ]
+        },
+        {
+          "label": "Company",
+          "values": [
+            {
+              "label": "Q1",
+              "color": "#56D9FE",
+              "value": 12
+            },
+            {
+              "label": "Q2",
+              "color": "#E9BB00",
+              "value": 13
+            }
+          ]
+        }
+      ]
     }
+  ]
+}
   ]
 }
